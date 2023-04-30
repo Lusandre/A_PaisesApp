@@ -24,7 +24,7 @@ export class VerPaisComponent {
         tap(console.log)
       )
       .subscribe((resp) => {
-        this.pais = resp;
+        this.pais = resp[0];
         console.log(resp);
       });
     // this.activatedRoute.params.subscribe(({ id }) => {
